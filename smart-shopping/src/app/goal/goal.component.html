@@ -1,0 +1,18 @@
+<h1 class="jumbotron">My Goals</h1>
+<hr>
+
+
+<ul>
+    <div *ngFor='let goal of goals;let i = index'>
+        <li appStrikethrough >{{goal.name}}  due on {{goal.completeDate|date|uppercase}}</li>
+        <button class="btn btn-danger" (click)='toogleDetails(i)'>Toogle Details</button>
+
+        <app-goal-details *ngIf="goal.showDescription" [goal]='goal' (isComplete)= 'completeGoal($event,i)' ></app-goal-details>
+    </div>
+</ul>
+  <p *ngIf='goals.length > 5'>You have too many goals</p>
+<div class="container">
+    <div class="row">
+        <app-goal-form></app-goal-form>
+    </div>
+</div>
