@@ -1,6 +1,23 @@
-# GithubSearch
+# GitHub-Search
+## Author
+Gerald Waweru
+### Description
+This is an angular based application that enables users to search for github users and or even their repositories
+## Know Bugs
+There are currently no known bugs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
+### Technologies Used
+* generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.0
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+
+### Contacts
+Incase you want to reach me for assistance, you can reach me via my email at geerockface4@gmail.com
+
+
 
 ## Development server
 
@@ -24,4 +41,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md)
+
+## licence
+This project is under the MIT licence
+Copyright (c) 2018 Geerocktricks
