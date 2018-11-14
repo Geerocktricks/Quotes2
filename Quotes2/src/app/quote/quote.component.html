@@ -9,7 +9,9 @@
               <div *ngFor="let quote of quotes , let i = index" class=" col-md-8 card  quoted">
                   <li id="{{i}}" appHighlight >{{quote.name}} posted on {{quote.completeDate|date}}</li>
                   <button (click) = 'toogleDetails(i)'>Details</button>
-            
+                  <button class="col-md-2 like" (click)="likeButtonClick()" >({{numberOfLikes}})like</button>
+                  <button class="col-md-2 Dislike" (click)="dislikeButtonClick()" >({{numberOfDislikes}})Dislike</button>
+                  
             
                   <!-- I have to put this back (*ngIf="quote.ShowAuthor")" -->
                   <app-quote-details  [quote] = 'quote' (isComplete)= 'completeGoal($event,i)'></app-quote-details>

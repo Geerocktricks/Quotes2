@@ -7,10 +7,21 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
+  numberOfLikes: number = 0;
+  numberOfDislikes: number = 0;
+
+
   quotes = [
     new Quote(1, 'Heartbreaks are good for your career' , 'Geerockface' , new Date(2018, 3, 14)),
     new Quote (2 , 'Its not about what you\'ve been through , its about what you became' , 'Trevor Jayson' , new Date(2018, 3, 17)),
   ];
+  likeButtonClick() {
+    this.numberOfLikes++;
+
+  }
+  dislikeButtonClick() {
+    this.numberOfDislikes++;
+  }
 
   addNewQuote(qoute) {
     const qouteLength = this.quotes.length;
@@ -18,7 +29,7 @@ export class QuoteComponent implements OnInit {
     qoute.completeDate = new Date(qoute.completeDate);
     this.quotes.push(qoute);
 
-}
+  }
 
   completeGoal(isComplete, index) {
     if (isComplete) {
