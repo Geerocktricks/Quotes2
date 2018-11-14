@@ -1,3 +1,19 @@
+li{
+   list-style: none;
+}
 ul{
-    
+    margin-bottom: 20px; 
+}
+.quoted{
+    float: right;
+    top:200px;
+}
+.inputed{
+    top: 200px;
+    position: fixed;
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(214, 180, 180), rgb(185, 191, 223));
+    min-height: 1000px;
+
 }

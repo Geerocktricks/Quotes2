@@ -1,27 +1,26 @@
 # Quotes2
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### This is an application that you can share what you are going through as a way of talking to people, you can also read quotes of other people who underwent the same situation as you, vote the helpful posts and down vote the ones you dislike 13-Nov-2018
+#### Author
+* Gerald Waweru
+## How to use
+You write a post, then you write the name of the author. You can view post from other people and also choose to either up vote or down vote
+## Setup/Installation Requirements
+* This is a great place
+* to list setup instructions
+* in a simple
+* easy-to-understand
+* format
+## Known Bugs
+There are no known bugs at the moment
+## Technologies Used
+* HTML
+* JAVASCRIPT
+* CSS
+* BOOTSTRAP
+* ANGULAR
+* TYPESCRIPT
+## Support and contact details
+Incase of any issue, reach me at geerockface4@gmail.com
+### License
+This project is under MIT licence
+Copyright (c) 2018 eerocktricks
