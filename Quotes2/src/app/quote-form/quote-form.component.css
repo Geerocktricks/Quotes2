@@ -1,0 +1,30 @@
+textarea{
+    background: transparent;
+    width: 300px;
+    text-align: center;
+    color: #e3e3e3;
+    font-family: 'Dancing Script', cursive;
+}
+input{
+    background: transparent;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+input:hover , textarea:hover{
+    background: #a09e9e;
+    border: none;
+}
+.submit{
+    background-color: rgba(165, 24, 24, 0.8);
+    border: none;
+    margin-bottom: 30px;
+    color: #e3e3e3;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .3);
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: rgba(255, 5, 5, 0.8);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .3);
+    color: #a09e9e;
+}
