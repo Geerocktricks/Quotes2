@@ -12,11 +12,19 @@ export class QuoteComponent implements OnInit {
     new Quote (2 , 'Its not about what you\'ve been through , its about what you became' , 'Trevor Jayson' , new Date(2018, 3, 17)),
   ];
 
+  addNewQuote(qoute) {
+    const qouteLength = this.quotes.length;
+    qoute.id = qouteLength + 1;
+    qoute.completeDate = new Date(qoute.completeDate);
+    this.quotes.push(qoute);
+
+}
+
   completeGoal(isComplete, index) {
     if (isComplete) {
         this.quotes.splice(index, 1);
         }
-    alert('Are you sure you want to delete this quote?')
+    alert('Are you sure you want to delete this quote?');
         }
 
   toogleDetails(index) {
