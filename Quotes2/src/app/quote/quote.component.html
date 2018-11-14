@@ -1,6 +1,11 @@
+<div class="container">
+  <div class="row card badge bg-info">
+    <app-quote-form></app-quote-form>
+  </div>
+</div>
 <ul>
-  <div *ngFor="let quote of quotes , let i = index">
-      <li id="{{i}}" appHighlight>{{quote.name}} posted on {{quote.completeDate|date}}</li>
+  <div *ngFor="let quote of quotes , let i = index" class="card">
+      <li id="{{i}}" appHighlight >{{quote.name}} posted on {{quote.completeDate|date}}</li>
       <button (click) = 'toogleDetails(i)'>Details</button>
 
 

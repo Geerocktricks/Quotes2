@@ -7,8 +7,8 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quotes app';
-  slogan = 'Where do broken hearts go?';
+  title = 'Heart Broken ? How are you feeling?';
+  slogan = 'Share with others what you are going through or how you made it Through . Don\'t be depressed.';
   constructor() {
   }
 }
