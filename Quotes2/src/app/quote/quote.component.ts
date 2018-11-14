@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'Heartbreaks are good for your career' , 'Geerockface'),
-    new Quote (2 , 'Its not about what you\'ve been through , its about what you became' , 'Trevor Jayson'),
+    new Quote(1, 'Heartbreaks are good for your career' , 'Geerockface' , new Date(2018, 3, 14)),
+    new Quote (2 , 'Its not about what you\'ve been through , its about what you became' , 'Trevor Jayson' , new Date(2018, 3, 17)),
   ];
 
   completeGoal(isComplete, index) {
