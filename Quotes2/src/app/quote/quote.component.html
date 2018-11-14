@@ -1,4 +1,8 @@
 <ul>
-  <li *ngFor="let quote of quotes">{{quote.name}}</li>
+  <div *ngFor="let quote of quotes , let i = index">
+      <li>{{quote.name}}</li>
+      <app-quote-details [quote] = 'quote'></app-quote-details>
+      <button (click) = 'toolgleDetails(i)'>Details</button>
+  </div>
 </ul>
 <p *ngIf="quotes.length >1"> You need special advice</p>

@@ -8,9 +8,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'Heartbreaks are good for your career'),
-    new Quote (2 , 'Its not about what you\'ve been through , its about what you became'),
+    new Quote(1, 'Heartbreaks are good for your career' , 'Geerockface'),
+    new Quote (2 , 'Its not about what you\'ve been through , its about what you became' , 'Trevor Jayson'),
   ];
+  toogleDetails(index) {
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor ;
+  }
   constructor() { }
 
   ngOnInit() {
