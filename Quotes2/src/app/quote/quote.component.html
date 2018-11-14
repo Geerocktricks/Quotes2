@@ -1,3 +1,4 @@
-<p>
-  quote works!
-</p>
+<ul>
+  <li *ngFor="let quote of quotes">{{quote.name}}</li>
+</ul>
+<p *ngIf="quotes.length >1"> You need special advice</p>
