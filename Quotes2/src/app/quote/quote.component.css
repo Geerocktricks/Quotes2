@@ -22,5 +22,6 @@ ul{
 body{
     background-image: linear-gradient(to bottom right, rgb(214, 180, 180), rgb(185, 191, 223));
     min-height: 10000px;
+    border: none;
 
 }
