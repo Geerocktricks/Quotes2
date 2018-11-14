@@ -16,6 +16,7 @@ export class QuoteComponent implements OnInit {
     if (isComplete) {
         this.quotes.splice(index, 1);
         }
+    alert('Are you sure you want to delete this quote?')
         }
 
   toogleDetails(index) {
