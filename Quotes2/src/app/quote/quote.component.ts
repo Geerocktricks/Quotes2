@@ -11,8 +11,16 @@ export class QuoteComponent implements OnInit {
     new Quote(1, 'Heartbreaks are good for your career' , 'Geerockface'),
     new Quote (2 , 'Its not about what you\'ve been through , its about what you became' , 'Trevor Jayson'),
   ];
+
+  completeGoal(isComplete, index) {
+    if (isComplete) {
+        this.quotes.splice(index, 1);
+        }
+        }
+
   toogleDetails(index) {
-    this.quotes[index].showAuthor = !this.quotes[index].showAuthor ;
+    // this.quotes[index].showAuthor = !this.quotes[index].showAuthor ;
+    alert('I still love you baby');
   }
   constructor() { }
 

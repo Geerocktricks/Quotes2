@@ -1,8 +1,11 @@
 <ul>
   <div *ngFor="let quote of quotes , let i = index">
       <li>{{quote.name}}</li>
-      <app-quote-details [quote] = 'quote'></app-quote-details>
-      <button (click) = 'toolgleDetails(i)'>Details</button>
+      <button (click) = 'toogleDetails(i)'>Details</button>
+
+
+      <!-- I have to put this back (*ngIf="quote.ShowAuthor")" -->
+      <app-quote-details  [quote] = 'quote' (isComplete)= 'completeGoal($event,i)'></app-quote-details>
   </div>
 </ul>
 <p *ngIf="quotes.length >1"> You need special advice</p>
