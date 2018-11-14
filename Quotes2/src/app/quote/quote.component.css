@@ -1,16 +1,23 @@
 li{
    list-style: none;
+   padding: 20px;
+   margin: 10px;
 }
 ul{
-    margin-bottom: 20px; 
+    
 }
 .quoted{
     float: right;
     top:200px;
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 2px 3px 3px   rgba(0, 0, 0, .2);
+
 }
 .inputed{
     top: 200px;
     position: fixed;
+    box-shadow: 2px 3px 3px   rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .3);
 }
 body{
     background-image: linear-gradient(to bottom right, rgb(214, 180, 180), rgb(185, 191, 223));
