@@ -12,6 +12,7 @@ ul{
     background-color: rgba(0, 0, 0, .3);
     box-shadow: 2px 3px 3px   rgba(0, 0, 0, .2);
     margin-bottom: 20px;
+    /* height: 400px; */
 
 }
 .inputed{
@@ -19,6 +20,7 @@ ul{
     position: fixed;
     box-shadow: 2px 3px 3px   rgba(0, 0, 0, .2);
     background-color: rgba(119, 115, 115, 0.3);
+    
 }
 .inputted:hover{
     background-color: rgba(70, 69, 69, 0.3);
