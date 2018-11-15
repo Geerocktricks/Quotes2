@@ -11,7 +11,7 @@ You write a post, then you write the name of the author. You can view post from 
 * easy-to-understand
 * format
 ## Known Bugs
-There are no known bugs at the moment
+The details (toggle) is not functional at the moment
 ## Technologies Used
 * HTML
 * JAVASCRIPT
