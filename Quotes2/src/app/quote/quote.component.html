@@ -8,17 +8,18 @@
             <ul>
               <div *ngFor="let quote of quotes , let i = index" class=" col-md-8 card  quoted">
                   <app-quote-details  [quote] = 'quote' (isComplete)= 'completeGoal($event,i)'></app-quote-details>
-                  <button (click) = 'toogleDetails(i)'>Details</button>
-                  <button class="col-md-2 like" (click)="likeButtonClick()" >({{numberOfLikes}})like</button>
-                  <button class="col-md-2 Dislike" (click)="dislikeButtonClick()" >({{numberOfDislikes}})Dislike</button>
-                  <li id="{{i}}" appHighlight >{{quote.name}} posted on {{quote.completeDate|date}}</li>
+                  <button (click) = 'toogleDetails(i)' class="col-md-2 btn btn-success">Details</button>
+                  <li id="{{i}}" appHighlight class="highlight"><i>-{{quote.author}}....</i> <br> posted on {{quote.completeDate|date}}</li>
+                  <button class="col-md-2 like" (click)="likeButtonClick()" >{{numberOfLikes}} &#x2191;</button>
+                  <button class="col-md-2 Dislike" (click)="dislikeButtonClick()" >{{numberOfDislikes}} &#x2193;</button>
+                  <!-- <li id="{{i}}" appHighlight >{{quote.name}} posted on {{quote.completeDate|date}}</li> -->
                   
             
                   <!-- I have to put this back (*ngIf="quote.ShowAuthor")" -->
                   
               </div>
             </ul>
-            <p *ngIf="quotes.length >1"> You need special advice</p>
+            <!-- <p *ngIf="quotes.length >1"> You need special advice</p> -->
         </div>
 </body>
 
